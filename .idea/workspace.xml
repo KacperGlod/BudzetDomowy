@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.0 DB Connect &amp; Statements">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.01 Build gradle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Queries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Queries.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670411554847</updated>
       <workItem from="1670866234881" duration="301000" />
-      <workItem from="1670866692032" duration="432000" />
+      <workItem from="1670866692032" duration="1595000" />
     </task>
     <task id="LOCAL-00001" summary="pre version">
       <created>1670776358420</created>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670834006877</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v 1.01 Build gradle">
+      <created>1670867402168</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670867402168</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pre version" />
     <MESSAGE value="v 1.0 DB Connect &amp; Statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.0 DB Connect &amp; Statements" />
+    <MESSAGE value="v 1.01 Build gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.01 Build gradle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
