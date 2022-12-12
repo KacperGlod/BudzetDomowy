@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="pre version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/DBConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Queries.java" afterDir="false" />
+    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.0 DB Connect &amp; Statements">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,42 +42,6 @@
                 <item name="KG_BudzetDomowy" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KG_BudzetDomowy" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KG_BudzetDomowy" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.junit.jupiter:junit-jupiter-api:5.8.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KG_BudzetDomowy" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.junit.jupiter:junit-jupiter-api:5.8.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-                <item name="org.junit:junit-bom:5.8.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KG_BudzetDomowy" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.junit.jupiter:junit-jupiter-api:5.8.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-                <item name="org.junit:junit-bom:5.8.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-                <item name="org.junit.platform:junit-platform-commons:1.8.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="KG_BudzetDomowy" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -111,10 +74,23 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-j-8.0.31.jar",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Kacper/Documents/TestBAZA3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -125,6 +101,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670411554847</updated>
+      <workItem from="1670866234881" duration="301000" />
+      <workItem from="1670866692032" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="pre version">
       <created>1670776358420</created>
@@ -133,8 +111,18 @@
       <option name="project" value="LOCAL" />
       <updated>1670776358420</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v 1.0 DB Connect &amp; Statements">
+      <created>1670834006877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670834006877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -149,7 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pre version" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre version" />
+    <MESSAGE value="v 1.0 DB Connect &amp; Statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.0 DB Connect &amp; Statements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

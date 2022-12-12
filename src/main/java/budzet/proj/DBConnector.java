@@ -8,7 +8,7 @@ public class DBConnector {
 
     private static String URL = "jdbc:mysql://localhost:3306/budzet_domowy";
     private static String USER = "root";
-    private static String PASSWORD = "12345";
+    private static String PASSWORD = "";
 
     public static Connection connect(){
 

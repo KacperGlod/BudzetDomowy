@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class Queries {
 
-    public ResultSet excecuteSelect(String selectQuery){
+    public static ResultSet excecuteSelect(String selectQuery){
         try{
             Connection connection = DBConnector.connect();
             Statement statement = connection.createStatement();
@@ -17,7 +17,7 @@ public class Queries {
         }
     }
 
-    public void excecuteQuery(String query){
+    public static void excecuteQuery(String query){
         try{
             Connection connection = DBConnector.connect();
             Statement statement = connection.createStatement();
