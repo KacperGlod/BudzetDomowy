@@ -1,7 +1,14 @@
 package budzet.proj;
 
+import java.sql.ResultSet;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        DBConnector.connect();
+/*
+        try {
+            ResultSet result = Queries.executeSelect("SELECT * FROM Domownicy");
+        }
+        */
     }
 }
