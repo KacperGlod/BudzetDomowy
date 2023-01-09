@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.01 Build gradle">
+    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.02 Connect hotfix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/MainForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/MainForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Queries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Queries.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,29 +71,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Kacper/Documents/TestBAZA3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kacper/Downloads/KacperGlod_Lab09 (1)/KacperGlod_Lab09&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -102,7 +103,12 @@
       <option name="presentableId" value="Default" />
       <updated>1670411554847</updated>
       <workItem from="1670866234881" duration="301000" />
-      <workItem from="1670866692032" duration="1595000" />
+      <workItem from="1670866692032" duration="2119000" />
+      <workItem from="1670868826111" duration="61000" />
+      <workItem from="1670869041723" duration="118000" />
+      <workItem from="1671405820532" duration="246000" />
+      <workItem from="1673259907453" duration="3665000" />
+      <workItem from="1673287779010" duration="1214000" />
     </task>
     <task id="LOCAL-00001" summary="pre version">
       <created>1670776358420</created>
@@ -125,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670867402168</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v 1.02 Connect hotfix">
+      <created>1670868340732</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670868340732</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +159,8 @@
     <MESSAGE value="pre version" />
     <MESSAGE value="v 1.0 DB Connect &amp; Statements" />
     <MESSAGE value="v 1.01 Build gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.01 Build gradle" />
+    <MESSAGE value="v 1.02 Connect hotfix" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.02 Connect hotfix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
