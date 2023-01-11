@@ -5,10 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.02 Connect hotfix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/MainForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/MainForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/BudgetForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/BudgetManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/class-use/BudgetForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/class-use/BudgetManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/class-use/Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/budzet/proj/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/BudgetForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/BudgetManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/class-use/BudgetForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/class-use/BudgetManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/class-use/Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/budzet/proj/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/jquery-ui.overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/jquery.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/jqueryUI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/module-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/tag-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legal/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legal/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legal/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legal/jquery.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legal/jqueryUI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script-dir/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/MainForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Queries.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +139,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -109,6 +176,12 @@
       <workItem from="1671405820532" duration="246000" />
       <workItem from="1673259907453" duration="3665000" />
       <workItem from="1673287779010" duration="1214000" />
+      <workItem from="1673289611961" duration="5837000" />
+      <workItem from="1673296401423" duration="38000" />
+      <workItem from="1673296448346" duration="28000" />
+      <workItem from="1673299806663" duration="344000" />
+      <workItem from="1673300791789" duration="1889000" />
+      <workItem from="1673396433561" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="pre version">
       <created>1670776358420</created>
@@ -156,6 +229,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="pre version" />
     <MESSAGE value="v 1.0 DB Connect &amp; Statements" />
     <MESSAGE value="v 1.01 Build gradle" />

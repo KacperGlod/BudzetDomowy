@@ -1,11 +1,9 @@
 package budzet.proj;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 public class Main {
     public static void main(String[] args) {
-        DBConnector.connect();
+        //DBConnector.connect();
+        new BudgetForm();
 
         /*
         try {
