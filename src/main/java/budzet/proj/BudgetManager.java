@@ -20,10 +20,11 @@ public class BudgetManager {
         }
     }
 
-    public void addHousemate(String imie,String nazwisko) {
+    public void addHousemate(int id_osoby, String imie,String nazwisko) {
         try {
             PreparedStatement statement = connection.prepareStatement(
-                    "INSERT INTO domownicy (imie,nazwisko) VALUES (?)(?)");
+                    "INSERT INTO domownicy (id_osoby,imie,nazwisko) VALUES (?)(?)(?)");
+            statement.setInt(1, id_osoby);
             statement.setString(1, imie);
             statement.setString(2, nazwisko);
             statement.executeUpdate();

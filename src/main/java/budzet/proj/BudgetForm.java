@@ -45,6 +45,7 @@ public class BudgetForm extends JFrame {
 
         JButton addButton = new JButton("Dodaj transakcje");
         addButton.addActionListener(e -> {
+            int id_osoby = 5; 
             String imie = nameField.getText();
             String nazwisko = surnameField.getText();
             String amountText = amountField.getText();
@@ -53,8 +54,9 @@ public class BudgetForm extends JFrame {
                 float kwota = Float.parseFloat(amountText);
                 if (kwota > 0) {
                     budgetManager.addTransaction(kwota,4,-1);
+                    id_osoby = id_osoby + 1;
                 } else {
-                    budgetManager.addHousemate(imie,nazwisko);
+                    budgetManager.addHousemate(id_osoby,imie,nazwisko);
                 }
 
                 updateHousematesList();
