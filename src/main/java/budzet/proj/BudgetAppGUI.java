@@ -5,10 +5,8 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,11 +18,11 @@ public class BudgetAppGUI extends JFrame {
     private JTextField amountField;
     private JTextField titleField;
     private JTextField dateField;
-    private JTextField memberIdField;
+//    private JTextField memberIdField;
     private JTextField firstNameField;
     private JTextField lastNameField;
 
-  //  private JComboBox<Housemates> personComboBox;
+    private JComboBox<Housemates> personComboBox;
 
 
 
@@ -48,7 +46,10 @@ public class BudgetAppGUI extends JFrame {
         amountField = new JTextField(10);
         titleField = new JTextField(10);
         dateField = new JTextField(10);
-        memberIdField = new JTextField(10);
+ //       memberIdField = new JTextField(10);
+
+        // Inicjalizacja listy rozwijanej z domownikami
+        personComboBox = new JComboBox<Housemates>();
 
 
         //JComboBox<String> memberIdField = new JComboBox<>();
@@ -56,6 +57,7 @@ public class BudgetAppGUI extends JFrame {
         //pola tekstowe z imieniem i nazwiskiem do dodawania domowników
         firstNameField = new JTextField(10);
         lastNameField = new JTextField(10);
+
 
         // Panel na ktorym przechowywane beda pola tekstowe
         JPanel inputPanel = new JPanel();
@@ -67,20 +69,21 @@ public class BudgetAppGUI extends JFrame {
         inputPanel.add(dateField);
         inputPanel.add(new JLabel("Czlonek:"));
 
-        inputPanel.add(memberIdField);
-        //inputPanel.add(personComboBox,2);
+//        inputPanel.add(memberIdField);
+        inputPanel.add(personComboBox);
+
 
         // Dodawanie ComboBox z osobami do panelu formularza
-//        ArrayList<Housemates> persons = null;
-//        try {
-//            persons = (ArrayList<Housemates>) budgetApp.getMembers();
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-//        personComboBox = new JComboBox<>();
-//        for (Housemates person : persons) {
-//            personComboBox.addItem(person);
-//        }
+        ArrayList<Housemates> persons = null;
+        try {
+            persons = (ArrayList<Housemates>) budgetApp.getMembers();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        //personComboBox = new JComboBox<>();
+        for (Housemates person : persons) {
+            personComboBox.addItem(person);
+        }
 //
 //        personComboBox.setRenderer(new DefaultListCellRenderer() {
 //            @Override
@@ -127,9 +130,17 @@ public class BudgetAppGUI extends JFrame {
             }
         });
 
-//        List<Housemates> members = budgetApp.getMembers();
+        List<Housemates> members = null;
+
+//        try {
+//            members = budgetApp.getMembers();
+//        } catch (SQLException e) {
+//           e.printStackTrace();
+//           JOptionPane.showMessageDialog(null, "Error retrieving members list: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+//        }
+//
 //        for (Housemates m : members) {
-//            memberIdField.addItem(m.getImie() + " " + m.getNazwisko());
+//            personComboBox.addItem(members);
 //        }
 
 
@@ -140,9 +151,13 @@ public class BudgetAppGUI extends JFrame {
                 float amount = Float.parseFloat(amountField.getText());
                 String title = titleField.getText();
                 String date = dateField.getText();
-                int memberId = Integer.parseInt(memberIdField.getText());
-                //String selectedMemberName = (String) memberIdField.getSelectedItem();
-                //int memberId = budgetApp.getIdByName(selectedMemberName);
+                //int memberId = Integer.parseInt(memberIdField.getText());
+
+//                String selectedMemberName = (String) personComboBox.getSelectedItem();
+//                int memberId = budgetApp.getIdByName(selectedMemberName);
+
+                Housemates sm = (Housemates) personComboBox.getSelectedItem();
+                int memberId = sm.getIdOsoby();
 
                 budgetApp.createTransaction(memberId, amount, title, date);
                 refreshTransactionsTable();

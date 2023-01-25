@@ -217,7 +217,7 @@ public class BudgetApp {
 
     public List<Housemates> getMembers() throws SQLException {
         List<Housemates> members = new ArrayList<>();
-        try {
+
             String query = "SELECT * FROM domownicy";
             PreparedStatement stmt = conn.prepareStatement(query);
             ResultSet rs = stmt.executeQuery();
@@ -227,11 +227,26 @@ public class BudgetApp {
                 String lastName = rs.getString("nazwisko");
                 members.add(new Housemates(id, firstName, lastName));
             }
-        } catch (SQLException e){
-            e.printStackTrace();
-        }
         return members;
     }
+
+    public int getIdByName(String name) {
+        int id = 0;
+        try {
+            PreparedStatement statement = conn.prepareStatement("SELECT id_osoby FROM domownicy WHERE imie = ? AND nazwisko = ?");
+            String[] nameArray = name.split(" ");
+            statement.setString(1, nameArray[0]);
+            statement.setString(2, nameArray[1]);
+            ResultSet rs = statement.executeQuery();
+            if (rs.next()) {
+                id = rs.getInt("id_osoby");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return id;
+    }
+
 
 }
 
