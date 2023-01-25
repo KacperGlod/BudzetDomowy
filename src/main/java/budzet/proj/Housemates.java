@@ -35,6 +35,15 @@ public class Housemates {
         public void setNazwisko(String nazwisko) {
             this.nazwisko = nazwisko;
         }
+
+    public String getFullName() {
+        return imie + " " + nazwisko;
+    }
+
+    @Override
+    public String toString() {
+        return imie + " " + nazwisko;
+    }
 /*
     public void saveDomownik(Housemates domownik) {
         Connection connection = BudgetManager.getConnection();

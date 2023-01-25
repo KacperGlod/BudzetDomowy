@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.04 Database in GUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Housemates.java" afterDir="false" />
+    <list default="true" id="dfea1adc-d721-43ed-ba11-9e3b9404ff30" name="Changes" comment="v 1.04.1 Database in GUI">
+      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetAppGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/BudgetManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Housemates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Housemates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/budzet/proj/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,11 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673396625793</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v 1.04.1 Database in GUI">
+      <created>1674338022026</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674338022026</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -184,7 +198,8 @@
     <MESSAGE value="v 1.01 Build gradle" />
     <MESSAGE value="v 1.02 Connect hotfix" />
     <MESSAGE value="v 1.04 Database in GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.04 Database in GUI" />
+    <MESSAGE value="v 1.04.1 Database in GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.04.1 Database in GUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
