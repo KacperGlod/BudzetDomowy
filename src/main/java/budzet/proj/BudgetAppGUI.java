@@ -10,24 +10,59 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Klasa BudgetAppGUI odpowiada za graficzny interfejs programu.
+ * W klasie znajdują się poszczególne kompontenty odpowiadające elementom GUI.
+ * @author Kacper Głód
+ * @version 1.05
+ */
 public class BudgetAppGUI extends JFrame {
-    private BudgetApp budgetApp;
+    /**
+     * Tworzenie obiektu klasy BudgetManager, w celu używania funkcji z tej klasy
+     */
+    private BudgetManager budgetManager;
+    /**
+     * Tabela odpowiadająca za wyświetlanie transakcji
+     */
     private JTable transactionsTable;
+    /**
+     * Interfejs reprezentujący dane zestawione w tabeli
+     */
     private DefaultTableModel tableModel;
+    /**
+     * Pole tekstowe, w którym wpisujemy kwotę transakcji
+     */
     private JTextField amountField;
+    /**
+     * Pole tekstowe, w którym wpisujemy tytuł transakcji
+     */
     private JTextField titleField;
+    /**
+     * Pole tekstowe, w którym wpisujemy datę transakcji
+     */
     private JTextField dateField;
 //    private JTextField memberIdField;
+    /**
+     * Pole tekstowe, w którym wpisujemy imię domownika
+     */
     private JTextField firstNameField;
+    /**
+     * Pole tekstowe, w którym wpisujemy imię domownika
+     */
     private JTextField lastNameField;
-
+    /**
+     * Rozwijana lista domowników
+     */
     private JComboBox<Housemates> personComboBox;
 
-
-
+    /**
+     * Konstruktor klasy BudgetAppGUI.
+     * Tworzy on główne okno programu, w którym znajdują się wszystkie jego komponenty.
+     * Znajdują się w nim definicje poszczególnych komponentów, tabel, panelów, layoutów.
+     * Posiada także listenery opisujące zachowania danych przycisków po kliknięciu na nie.
+     */
     public BudgetAppGUI() {
-        budgetApp = new BudgetApp();
+        budgetManager = new BudgetManager();
 
         setTitle("Budzet domowy");
         setSize(1200, 600);
@@ -76,7 +111,7 @@ public class BudgetAppGUI extends JFrame {
         // Dodawanie ComboBox z osobami do panelu formularza
         ArrayList<Housemates> persons = null;
         try {
-            persons = (ArrayList<Housemates>) budgetApp.getMembers();
+            persons = (ArrayList<Housemates>) budgetManager.getMembers();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -113,16 +148,22 @@ public class BudgetAppGUI extends JFrame {
 
 
         JButton totalButton = new JButton("Suma");
+        /**
+         * Działanie przycisku totalButton odpowiedzialnego za wyświetlanie sumy jaka znajduje się w całym budżecie
+         */
         totalButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                float total = budgetApp.getTotalAmount();
+                float total = budgetManager.getTotalAmount();
                 JOptionPane.showMessageDialog(null, "W budzecie domowym znajduje sie: " + total + " złotych");
             }
         });
 
         // Przycisk odpowiedzialny za odswiezanie tabeli z transakcjami
         JButton refreshButton = new JButton("Odswiez");
+        /**
+         * Działanie przycisku refreshButton, który odświeża tabelę transakcji
+         */
         refreshButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -133,7 +174,7 @@ public class BudgetAppGUI extends JFrame {
         List<Housemates> members = null;
 
 //        try {
-//            members = budgetApp.getMembers();
+//            members = budgetManager.getMembers();
 //        } catch (SQLException e) {
 //           e.printStackTrace();
 //           JOptionPane.showMessageDialog(null, "Error retrieving members list: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
@@ -145,6 +186,9 @@ public class BudgetAppGUI extends JFrame {
 
 
         JButton addButton = new JButton("Dodaj transakcje");
+        /**
+         * Działanie przycisku addButton, dzięki któremu możemy dodawać transakcje do bazy
+         */
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -154,24 +198,26 @@ public class BudgetAppGUI extends JFrame {
                 //int memberId = Integer.parseInt(memberIdField.getText());
 
 //                String selectedMemberName = (String) personComboBox.getSelectedItem();
-//                int memberId = budgetApp.getIdByName(selectedMemberName);
+//                int memberId = budgetManager.getIdByName(selectedMemberName);
 
                 Housemates sm = (Housemates) personComboBox.getSelectedItem();
                 int memberId = sm.getIdOsoby();
 
-                budgetApp.createTransaction(memberId, amount, title, date);
+                budgetManager.createTransaction(memberId, amount, title, date);
                 refreshTransactionsTable();
             }
         });
 
         JButton deleteButton = new JButton("Usun transakcje");
-
+        /**
+         * Działanie przycisku deleteButton, który pozwala na usuwanie wybranych rekordów (transakcji)
+         */
         deleteButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 int[] selectedRows = transactionsTable.getSelectedRows();
                 for (int row : selectedRows) {
                     int id = (int) transactionsTable.getValueAt(row, 0);
-                    budgetApp.deleteTransaction(id);
+                    budgetManager.deleteTransaction(id);
                 }
                 refreshTransactionsTable();
             }
@@ -179,12 +225,15 @@ public class BudgetAppGUI extends JFrame {
 
 
         JButton AddMemberButton = new JButton("Dodaj czlonka rodziny");
+        /**
+         * Działanie przycisku AddMemberButton, pozwalającego na dodawanie członków rodziny
+         */
         AddMemberButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String firstName = firstNameField.getText();
                 String lastName = lastNameField.getText();
-                budgetApp.createMember(firstName, lastName);
+                budgetManager.createMember(firstName, lastName);
                 //refreshMembersTable();
             }
         });
@@ -195,7 +244,7 @@ public class BudgetAppGUI extends JFrame {
                 int[] selectedRows = membersTable.getSelectedRows();
                 for (int row : selectedRows) {
                     int id = (int) membersTable.getValueAt(row, 0);
-                    budgetApp.deleteMember(id);
+                    budgetManager.deleteMember(id);
                 }
                 //refreshMembersTable();
             }
@@ -203,6 +252,9 @@ public class BudgetAppGUI extends JFrame {
 */
 
         JButton statisticsButton = new JButton("Statystyki miesieczne");
+        /**
+         * Przycisk statystyki otwierający nowe okno, które pozwala obliczać zestawienia miesięczne.
+         */
         statisticsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -222,9 +274,13 @@ public class BudgetAppGUI extends JFrame {
                 inputPanel.add(monthField);
                 statisticsFrame.add(inputPanel, BorderLayout.NORTH);
 
-
                 // Przycisk liczacy statystyke miesieczna
                 JButton calculateButton = new JButton("Wyswietl");
+
+                /**
+                 * Ustawienie przycisku liczącego statystykę miesięczną.
+                 * Opcja niedostępna w tej wersji programu.
+                 */
                 calculateButton.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -240,7 +296,7 @@ public class BudgetAppGUI extends JFrame {
                         }
                       //  try {
                             // Pobieranie transakcji z danego roku i miesiaca
-                            List<Transaction> transactions = budgetApp.getTransactions(yearInput, monthInput);
+                            List<Transaction> transactions = budgetManager.getTransactions(yearInput, monthInput);
                             StringBuilder statistics = new StringBuilder();
                             statistics.append("Wplywy i wydatki podczas: " + monthInput + "/" + yearInput + ":\n");
                             for (Transaction t : transactions) {
@@ -264,6 +320,10 @@ public class BudgetAppGUI extends JFrame {
                 statisticsFrame.add(statisticsScrollPane, BorderLayout.CENTER);
             }
         });
+
+        /**
+         * Dodawanie do określonych panelów danych przycisków
+         */
 
         inputPanel.add(addButton);
 
@@ -296,23 +356,26 @@ public class BudgetAppGUI extends JFrame {
         refreshTransactionsTable();
     }
 
+    /**
+     * Metoda pozwalająca odświeżać tabelę transakcji
+     */
     private void refreshTransactionsTable() {
         try {
             // Wyczysc dane z tabeli
             tableModel.setRowCount(0);
 
             //pobierz aktualne dane
-            ResultSet rs = budgetApp.getTransactions();
+            ResultSet rs = budgetManager.getTransactions();
             while (rs.next()) {
                 int id = rs.getInt("id_transakcje");
                 float amount = rs.getFloat("kwota");
                 String title = rs.getString("tytul_transakcji");
                 String date = rs.getString("data_transakcji");
                 int id_person = rs.getInt("id_osoby");
-                String name = budgetApp.getName(id_person);
+                String name = budgetManager.getName(id_person);
                 // Add the data to the table
                 tableModel.addRow(new Object[]{id, amount, title, date, name});
-                //model.addRow(new Object[]{t.getId(), t.getAmount(), t.getTitle(), t.getDate(), budgetApp.getName(t.getMemberId())});
+                //model.addRow(new Object[]{t.getId(), t.getAmount(), t.getTitle(), t.getDate(), budgetManager.getName(t.getMemberId())});
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -320,10 +383,13 @@ public class BudgetAppGUI extends JFrame {
     }
 
 
+    /**
+     * Metoda pozwalająca odświeżać tabelę domowników
+     */
     public void refreshMembersTable() {
         try {
             JTable membersTable = new JTable();
-            List<Housemates> members = budgetApp.getMembers();
+            List<Housemates> members = budgetManager.getMembers();
             DefaultTableModel model = (DefaultTableModel) membersTable.getModel();
             model.setRowCount(0);
             for (Housemates m : members) {
@@ -334,7 +400,12 @@ public class BudgetAppGUI extends JFrame {
         }
     }
 
-
+    /**
+     * Funkcja typu boolean sprwadzająca poprawność roku.
+     * Używana przy wyświetlaniu statystyki miesięcznej.
+     * @param year to rok będący argumentem funkcji
+     * @return zwraca prawdę lub fałsz, w zależności czy rok zgadzą się z podanym przez użytkownika
+     */
     private boolean isValidYear(String year) {
         try {
             int yearNum = Integer.parseInt(year);
@@ -348,6 +419,12 @@ public class BudgetAppGUI extends JFrame {
         }
     }
 
+    /**
+     * Funkcja typu boolean sprwadzająca poprawność miesiąca.
+     * Używana przy wyświetlaniu statystyki miesięcznej.
+     * @param month to miesiąc będący argumentem funkcji
+     * @return zwraca prawdę lub fałsz, w zależności czy miesiąc zgadzą się z podanym przez użytkownika
+     */
     private boolean isValidMonth(String month) {
         try {
             int monthNum = Integer.parseInt(month);

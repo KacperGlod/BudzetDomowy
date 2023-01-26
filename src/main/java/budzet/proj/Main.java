@@ -1,12 +1,25 @@
 package budzet.proj;
 
+/**
+ * Klasa Main to główna klasa do zarządzania budżetem domowym.
+ * W klasie tworzymy obiekt klasy BudgetManager pozwalającej na połączenie z bazą danych MySQL oraz wykonywanie funkcji i metod na bazie.
+ * W klasie tworzymy także obiekt klasy BudgetAppGUI tworzący nowe okno interfejsu graficznego.
+ * @author Kacper Głód
+ * @version 1.06
+ * @see BudgetManager
+ * @see BudgetAppGUI
+ */
 public class Main {
+    /**
+     * Metoda main tworzy obiekt klasy {@link BudgetManager} oraz obiekt klasy {@link BudgetAppGUI}.
+     * @param args argumenty metody, które są przekazywane z linii komend.
+     */
     public static void main(String[] args) {
         //BudgetManager.connect();
         //new BudgetForm();
-        //new BudgetApp();
+        //new BudgetManager();
 
-        BudgetApp Budzet = new BudgetApp();
+        BudgetManager Budzet = new BudgetManager();
 
         BudgetAppGUI GUI = new BudgetAppGUI();
 
@@ -17,14 +30,3 @@ public class Main {
         //app.readTransactions();
     }
 }
-
-
-        /*
-        try {
-            ResultSet result = Queries.executeSelect("SELECT * FROM budzet_domowy.Domownicy");
-            result.next();
-            String imie = result.getString("IMIE");
-            System.out.println("Znaleziono nastepujacych domownikow: " + imie);
-        } catch (SQLException e){
-            e.printStackTrace();
-        }*/

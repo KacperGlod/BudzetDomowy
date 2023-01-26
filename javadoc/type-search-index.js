@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"budzet.proj","l":"BudgetForm"},{"p":"budzet.proj","l":"BudgetManager"},{"p":"budzet.proj","l":"Main"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"budzet.proj","l":"BudgetAppGUI"},{"p":"budzet.proj","l":"BudgetManager"},{"p":"budzet.proj","l":"Housemates"},{"p":"budzet.proj","l":"Main"},{"p":"budzet.proj","l":"Transaction"}];updateSearchResults();
