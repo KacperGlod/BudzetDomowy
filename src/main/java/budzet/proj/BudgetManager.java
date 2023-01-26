@@ -40,7 +40,7 @@ public class BudgetManager {
             stmt.setString(1, firstName);
             stmt.setString(2, lastName);
             stmt.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Członek rodziny dodany poprawnie");
+            JOptionPane.showMessageDialog(null, "Czlonek rodziny dodany poprawnie");
         } catch (SQLException e) {
             e.printStackTrace();
         }

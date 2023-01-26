@@ -155,7 +155,7 @@ public class BudgetAppGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 float total = budgetManager.getTotalAmount();
-                JOptionPane.showMessageDialog(null, "W budzecie domowym znajduje sie: " + total + " złotych");
+                JOptionPane.showMessageDialog(null, "W budzecie domowym znajduje sie: " + total + " zlotych");
             }
         });
 
